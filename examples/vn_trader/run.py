@@ -58,10 +58,11 @@ from vnpy.gateway.mt5 import Mt5Gateway
 
 def main():
     """"""
+    #创建pyqt5界面
     qapp = create_qapp()
-
+    #事件引擎
     event_engine = EventEngine()
-
+    #主引擎
     main_engine = MainEngine(event_engine)
 
     # main_engine.add_gateway(BinanceGateway)
@@ -122,4 +123,5 @@ def main():
 
 
 if __name__ == "__main__":
+    #入口启动
     main()
